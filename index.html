@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AdMedika URLScheme Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px 15%;
+        }
+
+        form header {
+            margin: 0 0 20px 0;
+        }
+
+        form header div {
+            font-size: 90%;
+            color: #999;
+        }
+
+        form header h2 {
+            margin: 0 0 5px 0;
+        }
+
+        form>div {
+            clear: both;
+            overflow: hidden;
+            padding: 1px;
+            margin: 0 0 15px 0;
+        }
+
+        form>div>fieldset>div>div {
+            margin: 0 0 5px 0;
+        }
+
+        form>div>label,
+        legend {
+            width: 25%;
+            float: left;
+            padding-right: 10px;
+        }
+
+        form>div>div,
+        form>div>fieldset>div {
+            width: 75%;
+            float: right;
+        }
+
+        form>div>fieldset label {
+            font-size: 90%;
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=url],
+        input[type=password],
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 32px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        select {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 32px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=url]:focus,
+        input[type=password]:focus,
+        textarea:focus {
+            outline: 0;
+            border-color: #4697e4;
+        }
+
+        @media (max-width: 600px) {
+            form>div {
+                margin: 0 0 15px 0;
+            }
+
+            form>div>label,
+            legend {
+                width: 100%;
+                float: none;
+                margin: 0 0 5px 0;
+            }
+
+            form>div>div,
+            form>div>fieldset>div {
+                width: 100%;
+                float: none;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=url],
+            input[type=password],
+            textarea,
+            select {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            form>div>label,
+            legend {
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label class="desc" id="first_name" for="first_name">First Name</label>
+            <div>
+                <input id="first_name" name="first_name" type="text" class="field text fn" value="Taqwa" size="8"
+                    tabindex="1">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="last_name" for="last_name">Last Name</label>
+            <div>
+                <input id="last_name" name="last_name" type="text" class="field text fn" value="Chan" size="8" tabindex="1">
+            </div>
+        </div>
+
+        <div>
+            <fieldset>
+
+                <legend id="gender" class="desc">
+                    Gender
+                </legend>
+
+                <div>
+                    <input id="gender" type="hidden" value="">
+                    <div>
+                        <input id="gender_male" name="gender" type="radio" value="male" tabindex="5" checked="checked">
+                        <label class="choice" for="gender_male">Male</label>
+                    </div>
+                    <div>
+                        <input id="gender_female" name="gender" type="radio" value="female" tabindex="6">
+                        <label class="choice" for="gender_female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label class="desc" id="email" for="email">
+                Email
+            </label>
+            <div>
+                <input id="email" name="email" type="email" spellcheck="false" value="example1@gmail.com" maxlength="255" tabindex="3">
+            </div>
+        </div>
+
+
+
+        <div>
+            <label class="desc" id="height" for="height">
+                Height
+            </label>
+            <div>
+                <input id="height" name="height" type="number" spellcheck="false" value="170" maxlength="255"
+                    tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="weight" for="weight">
+                Weight
+            </label>
+            <div>
+                <input id="weight" name="weight" type="number" spellcheck="false" value="60" maxlength="255"
+                    tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="blood_type" for="blood_type">
+                Blood Type
+            </label>
+            <div>
+                <input id="blood_type" name="blood_type" type="text" spellcheck="false" value="O" maxlength="255"
+                    tabindex="3">
+            </div>
+        </div>
+
+
+
+        <div>
+            <label class="desc" id="date_of_birth" for="date_of_birth">
+                Date Of Birth
+            </label>
+            <div>
+                <input id="date_of_birth" name="date_of_birth" type="date" spellcheck="false" value="1999-08-21"
+                    maxlength="255" tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="address" for="address">
+                Address
+            </label>
+
+            <div>
+                <textarea id="address" name="address" spellcheck="true" rows="20" cols="50"
+                    tabindex="4">Neraka Jahanam</textarea>
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="contact" for="contact">
+                Contact
+            </label>
+            <div>
+                <input id="contact" name="contact" type="phone" spellcheck="false" value="0812341235" maxlength="255"
+                    tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="measurement" for="measurement">
+                Measurement
+            </label>
+            <div>
+                <select id="measurement" name="measurement" class="field select medium" tabindex="11">
+                    <option value="heartRate">Detak Biji</option>
+                    <option value="bloodGlucose">Gula Darah</option>
+                    <option value="bloodPressure">Tekanan Darah</option>
+                    <option value="cholesterol">Kolesterol</option>
+                    <option value="oxygen">Oksigen Darah</option>
+                    <option value="stressLevel">Level Stress</option>
+                    <option value="temperature">Suhu Tubuh</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <input onclick="generateLink()" id="saveForm" name="saveForm" type="submit" value="Open AdMedika">
+            </div>
+        </div>
+
+    </form>
+</body>
+
+
+<script>
+    function generateLink() {
+        var firstName = document.getElementsByName("first_name")[0].value;
+        var lastName = document.getElementsByName("last_name")[0].value;
+        var gender = document.getElementsByName("gender")[0].value;
+        var email = document.getElementsByName("email")[0].value;
+        var height = document.getElementsByName("height")[0].value;
+        var weight = document.getElementsByName("weight")[0].value;
+        var bloodType = document.getElementsByName("blood_type")[0].value;
+        var dateOfBirth = document.getElementsByName("date_of_birth")[0].value;
+        var address = document.getElementsByName("address")[0].value;
+        var contact = document.getElementsByName("contact")[0].value;
+        var measurement = document.getElementsByName("measurement")[0].value;
+
+        var link = "wishForHealth://data?email=" + email + "&firstName=" + firstName + "&lastName=" + lastName + "&height=" + height + "&weight=" + weight + "&dateOfBirth=" + dateOfBirth + "&gender=" + gender + "&measurement=" + measurement + "";
+        window.open(link,"_self")
+    }
+</script>
+
+</html>
