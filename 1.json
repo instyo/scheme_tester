@@ -1,0 +1,62 @@
+{
+    "statusCode": 200,
+    "message": "Successfully get product list",
+    "data": [
+        {
+            "id": 1,
+            "name": "Macbook Air 13 2022 MLXY3ID - Silver [Apple M2-8GB-SSD 256GB]",
+            "price": 18749000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_air_13_2022_silver.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Macbook Air 13 2022 MLY33ID - MidNight [Apple M2-8GB-SSD 256GB]",
+            "price": 18749000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_air_13_2022_midnight-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Macbook Pro 13 2022 MNEP3ID - Silver [Apple M2-8GB-SSD 256GB] (Touch Bar)",
+            "price": 19900000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_pro_13_2022_silver-2.png"
+        },
+        {
+            "id": 4,
+            "name": "Macbook Pro 13 2022 MNEQ3ID - Silver [Apple M2-8GB-SSD 512GB] (Touch Bar)",
+            "price": 22999000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_pro_13_2022_silver-2.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Macbook Air 13 2022 MLY13ID - Star Light [Apple M2-8GB-SSD 256GB]",
+            "price": 18749000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_air_13_2022_star_light_1.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Macbook Air 13 2022 MLY23ID - Star Light [Apple M2-8GB-SSD 512GB]",
+            "price": 2299000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_air_13_2022_star_light_1.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Macbook Air 13 2022 MLXW3ID - Grey [Apple M2-8GB-SSD 256GB]",
+            "price": 18749000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_air_13_2022_grey-2.jpg"
+        },
+        {
+            "id": 8,
+            "name": "MacBook Pro 13 2022 MNEJ3ID - Grey [Apple M2-8GB-SSD 512GB] (Touch Bar)",
+            "price": 22999000,
+            "category": "Macbook",
+            "image": "https://els.id/media/catalog/product/cache/97836ba7b3400e3f5bce5bac5f4bff9a/m/a/macbook_pro_13_2022_grey_1.jpg"
+        }
+    ]
+}
